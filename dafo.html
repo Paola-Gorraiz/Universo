@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis DAFO - Astrofotografía, Astroturismo y Divulgación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #1a1a2e;
+            color: #e6e6e6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #00b7eb;
+        }
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .swot-section {
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 400px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+        .swot-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .swot-section h2 {
+            color: #fff;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .swot-section ul {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+        .swot-section li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #e6e6e6;
+        }
+        .strengths { background-image: url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+        .weaknesses { background-image: url('https://images.unsplash.com/photo-1516331138075-f3f121944158?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+        .opportunities { background-image: url('https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+        .threats { background-image: url('https://images.unsplash.com/photo-1517976487498-2f7b1b96a3e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+        @media (max-width: 768px) {
+            .swot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Análisis DAFO – Empresa de Astrofotografía, Astroturismo y Divulgación Científica</h1>
+        <div class="swot-grid">
+            <div class="swot-section strengths">
+                <h2>Fortalezas</h2>
+                <ul>
+                    <li>Diversificación de servicios: arte, turismo y educación.</li>
+                    <li>Alta especialización técnica en telescopios, cámaras y software.</li>
+                    <li>Productos únicos de alta calidad visual (cielo profundo, vía láctea, etc.).</li>
+                    <li>Experiencia enriquecedora en observaciones guiadas.</li>
+                    <li>Valor educativo adaptado a currículos escolares.</li>
+                    <li>Contribución a la cultura científica y ambiental.</li>
+                    <li>Posicionamiento diferencial frente a turismo convencional.</li>
+                </ul>
+            </div>
+            <div class="swot-section opportunities">
+                <h2>Oportunidades</h2>
+                <ul>
+                    <li>Creciente interés en astronomía (Artemis, SpaceX, JWST).</li>
+                    <li>Tendencia al turismo experiencial y sostenible.</li>
+                    <li>Mercado de arte: impresiones, posters, NFT.</li>
+                    <li>Alianzas con escuelas, museos, planetarios.</li>
+                    <li>Subvenciones para ciencia, cultura o turismo rural.</li>
+                    <li>Redes sociales como escaparate global.</li>
+                    <li>Cursos online de astrofotografía y astronomía.</li>
+                    <li>Participación en ferias y eventos astronómicos.</li>
+                </ul>
+            </div>
+            <div class="swot-section weaknesses">
+                <h2>Debilidades</h2>
+                <ul>
+                    <li>Alta inversión inicial y mantenimiento (equipos, software).</li>
+                    <li>Dependencia de meteorología, fases lunares, contaminación lumínica.</li>
+                    <li>Exigencias logísticas: traslados, permisos, coordinación.</li>
+                    <li>Limitado acceso a cielos oscuros en zonas urbanas.</li>
+                    <li>Coste de formación técnica y divulgativa continua.</li>
+                    <li>Dificultad para escalar sin productos digitales o personal.</li>
+                    <li>Estacionalidad por menor visibilidad en invierno.</li>
+                </ul>
+            </div>
+            <div class="swot-section threats">
+                <h2>Amenazas</h2>
+                <ul>
+                    <li>Competencia de aficionados con equipos avanzados.</li>
+                    <li>Condiciones ambientales impredecibles (nubes, viento).</li>
+                    <li>Saturación de actividades turísticas genéricas.</li>
+                    <li>Restricciones medioambientales en zonas protegidas.</li>
+                    <li>Difícil fidelización de clientes esporádicos.</li>
+                    <li>Obsolescencia tecnológica exige renovación constante.</li>
+                    <li>Riesgo de banalización del contenido científico.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

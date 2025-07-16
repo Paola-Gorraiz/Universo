@@ -1,43 +1,257 @@
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+/* General Styles */
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
+/* Hero Background */
 .hero-bg {
-    background-image: url(img/1000181788.jpg);
-    background-size: cover;
-    background-position: center center;
+  background-image: url('img/1000181788 04.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
 }
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
+/* Navbar Styles */
+    .bg-gray-900 {
+      background-color: #111827;
+    }
 
+    .navbar {
+      padding: 1rem;
+    }
+
+    .navbar .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-menu a:hover {
+      color: #feda75;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 2px 0;
+      transition: all 0.3s;
+    }
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
 
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
-.prev-btn {
-    left: 10px;
+.carousel img {
+  width: 100%;
+  height: auto;
+  max-height: 95vh;
+  object-fit: cover;
+  margin: auto;
+  flex-shrink: 0;
+  display: block;
 }
+
+/* Carousel Buttons */
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
 }
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #fff;
+}
+.prev-btn {
+  left: 10px;
+}
+
 .next-btn {
-    right: 10px;
+  right: 10px;
+}
+
+/* Reservation Form Status */
+#reservation-status {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.success {
+  background-color: #2f855a;
+}
+
+.error {
+  background-color: #c53030;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .carousel img {
+    max-height: 50vh;
+  }
+
+  .hero-bg {
+    height: 40vh;
+  }
+  .carousel-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #111827;
+        padding: 1rem;
+        z-index: 10;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .carousel img {
+        max-height: 50vh;
+      }
+
+      .carousel-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar h1 {
+        font-size: 1.25rem;
+      }
+
+      .carousel-btn {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+
+  #reservation-status {
+    font-size: 0.9rem;
+  }
+
+.fa-x-twitter, .fa-instagram, .fa-facebook {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+footer .icon-instagram {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  /*margin-right: 8px;*/
+}
+footer .icon-facebook {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.footer {
+      background-color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.footer a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .footer a:hover {
+      color: #feda75; /* Color al pasar el ratón */
+    }
+    footer .mt-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Spacing between links */
+}
+.social-icon {
+  background-color: #333; /* Fallback background if image fails */
 }
